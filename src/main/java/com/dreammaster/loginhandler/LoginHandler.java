@@ -14,11 +14,7 @@ public class LoginHandler {
 
     private static final String[] LOGIN_TEXT = {
             GOLD.toString() + STRIKETHROUGH + "-----------------------------------------------------",
-            BOLD + "Welcome to Gregtech: New Horizons " + GREEN + ModPackVersion,
-            BLUE + "The Quest Book has a shortcut key, check your keybindings", BLUE + "to remove conflicts.",
-            DARK_GREEN + "GTNH WIKI link https://gtnh.miraheze.org/wiki/", GREEN + "Please report bugs here:",
-            GOLD + "https://github.com/GTNewHorizons/GT-New-Horizons-Modpack/",
-            BLUE + "Visit our discord at https://discord.gg/gtnh",
+            Green + "Welcome to Gregtech: New Horizons & Reika",
             GOLD.toString() + STRIKETHROUGH + "-----------------------------------------------------" };
 
     @SuppressWarnings("unused")
