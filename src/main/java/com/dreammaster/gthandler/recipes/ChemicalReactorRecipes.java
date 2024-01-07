@@ -40,6 +40,30 @@ public class ChemicalReactorRecipes implements Runnable {
     public void run() {
         singleBlockOnly();
         multiBlockOnly();
+
+        // 充能赛特斯石英粉
+
+        GT_Values.RA.stdBuilder()
+                .itemInputs(
+                        GT_OreDictUnificator.get(OrePrefixes.dust, Materials.CertusQuartz, 1),
+                        GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Redstone, 1))
+                .itemOutputs(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.CertusQuartzCharged, 1))
+                .duration(30 * SECONDS).eut(TierEU.RECIPE_LV).addTo(UniversalChemical);
+        GT_Values.RA.stdBuilder()
+                .itemInputs(
+                        GT_OreDictUnificator.get(OrePrefixes.dust, Materials.CertusQuartzCharged, 3),
+                        GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Sodium, 1))
+                .itemOutputs(getModItem(AppliedEnergistics2.ID, "item.ItemMultiMaterial", 3, 1, missing))
+                .fluidInputs(FluidRegistry.getFluidStack("water", 1000)).duration(45 * SECONDS).eut(TierEU.RECIPE_LV)
+                .addTo(UniversalChemical);
+        GT_Values.RA.stdBuilder()
+                .itemInputs(
+                        GT_OreDictUnificator.get(OrePrefixes.dust, Materials.CertusQuartzCharged, 3),
+                        GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Sodium, 1))
+                .itemOutputs(getModItem(AppliedEnergistics2.ID, "item.ItemMultiMaterial", 3, 1, missing))
+                .fluidInputs(FluidRegistry.getFluidStack("ic2distilledwater", 1000)).duration(35 * SECONDS)
+                .eut(TierEU.RECIPE_LV).addTo(UniversalChemical);
+
         // Potassium Hydroxide
 
         GT_Values.RA.stdBuilder()
