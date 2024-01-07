@@ -5,14 +5,15 @@ import static gregtech.api.enums.Mods.AppliedEnergistics2;
 import static gregtech.api.enums.Mods.Avaritia;
 import static gregtech.api.util.GT_ModHandler.getModItem;
 
-import com.dreammaster.gthandler.CustomItemList;
-
-import gregtech.api.enums.ItemList;
-
 import java.util.Arrays;
 import java.util.List;
 
+import net.minecraft.item.ItemStack;
+
+import com.dreammaster.gthandler.CustomItemList;
+
 import fox.spiteful.avaritia.crafting.ExtremeCraftingManager;
+import gregtech.api.enums.ItemList;
 
 public class ScriptAE2WC implements IScriptLoader {
 
@@ -50,7 +51,7 @@ public class ScriptAE2WC implements IScriptLoader {
                 getModItem(AppliedEnergistics2.ID, "item.ItemMultiMaterial", 1, 38, missing),
                 getModItem(AppliedEnergistics2.ID, "item.ItemMultiMaterial", 1, 47, missing),
                 getModItem(AppliedEnergistics2.ID, "item.ItemMultiMaterial", 1, 38, missing));
-        //添加超级加速卡和矿典过滤卡
+        // 添加超级加速卡和矿典过滤卡
         final ItemStack SuperSpeedCard = getModItem(AppliedEnergistics2.ID, "item.ItemMultiMaterial", 1, 56);
         addShapelessRecipe(
                 SuperSpeedCard,
