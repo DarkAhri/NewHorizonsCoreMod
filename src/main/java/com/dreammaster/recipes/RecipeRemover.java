@@ -2932,7 +2932,7 @@ public class RecipeRemover {
 
         removeRecipeShapelessDelayed(GT_OreDictUnificator.get(OrePrefixes.gem, Materials.Ruby, 1L));
         removeRecipeShapelessDelayed(GT_OreDictUnificator.get(OrePrefixes.gem, Materials.Sapphire, 1L));
-        removeRecipeShapelessDelayed(getModItem("minecraft", "dye", 1, 4, missing));
+        //removeRecipeShapelessDelayed(getModItem("minecraft", "dye", 1, 4, missing));
         removeRecipeShapelessDelayed(
                 getModItem("minecraft", "dye", 3, 15, missing),
                 getModItem("BiomesOPlenty", "bones", 1, 0, missing));
@@ -2968,7 +2968,7 @@ public class RecipeRemover {
                 getModItem("BiomesOPlenty", "plants", 1, 7, missing));
         removeRecipeShapelessDelayed(GT_OreDictUnificator.get(OrePrefixes.gem, Materials.Ruby, 1L));
         removeRecipeShapelessDelayed(GT_OreDictUnificator.get(OrePrefixes.gem, Materials.Sapphire, 1L));
-        removeRecipeShapelessDelayed(getModItem("minecraft", "dye", 1, 4, missing));
+        //removeRecipeShapelessDelayed(getModItem("minecraft", "dye", 1, 4, missing));
         removeRecipeShapelessDelayed(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Apatite, 1L));
         removeRecipeShapelessDelayed(GT_OreDictUnificator.get(OrePrefixes.gem, Materials.Apatite, 1L));
         removeRecipeShapelessDelayed(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Diamond, 1L));
@@ -3305,6 +3305,7 @@ public class RecipeRemover {
                 new Object[] { getModItem("ForbiddenMagic", "FMResource", 1, 0, missing),
                         getModItem("ForbiddenMagic", "FMResource", 1, 0, missing),
                         getModItem("ForbiddenMagic", "FMResource", 1, 0, missing) });
+        /*
         removeRecipeShapedDelayed(
                 getModItem("minecraft", "diamond", 1, 0, missing),
                 new Object[] { getModItem("MagicBees", "beeNugget", 1, 5, missing),
@@ -3316,6 +3317,7 @@ public class RecipeRemover {
                 new Object[] { getModItem("MagicBees", "beeNugget", 1, 5, missing),
                         getModItem("MagicBees", "beeNugget", 1, 5, missing),
                         getModItem("MagicBees", "beeNugget", 1, 5, missing) });
+        */                
         removeRecipeShapedDelayed(
                 getModItem("minecraft", "paper", 2, 0, missing),
                 new Object[] { getModItem("minecraft", "reeds", 1, 0, missing),
