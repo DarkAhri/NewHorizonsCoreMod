@@ -5,6 +5,10 @@ import static gregtech.api.enums.Mods.AppliedEnergistics2;
 import static gregtech.api.enums.Mods.Avaritia;
 import static gregtech.api.util.GT_ModHandler.getModItem;
 
+import com.dreammaster.gthandler.CustomItemList;
+
+import gregtech.api.enums.ItemList;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -47,6 +51,7 @@ public class ScriptAE2WC implements IScriptLoader {
                 getModItem(AppliedEnergistics2.ID, "item.ItemMultiMaterial", 1, 47, missing),
                 getModItem(AppliedEnergistics2.ID, "item.ItemMultiMaterial", 1, 38, missing));
         //添加超级加速卡和矿典过滤卡
+        final ItemStack SuperSpeedCard = getModItem(AppliedEnergistics2.ID, "item.ItemMultiMaterial", 1, 56);
         addShapelessRecipe(
                 SuperSpeedCard,
                 getModItem(AppliedEnergistics2.ID, "item.ItemMultiMaterial", 1, 28),
