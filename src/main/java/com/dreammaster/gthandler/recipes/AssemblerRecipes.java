@@ -3758,6 +3758,7 @@ public class AssemblerRecipes implements Runnable {
             return;
         }
 
+        /*
         GT_Values.RA.stdBuilder()
                 .itemInputs(
                         GT_ModHandler.getModItem(AppliedEnergistics2.ID, "item.ItemMultiMaterial", 1L, 24),
@@ -3785,7 +3786,7 @@ public class AssemblerRecipes implements Runnable {
                         GT_OreDictUnificator.get(OrePrefixes.plate, Materials.StainlessSteel, 2L))
                 .itemOutputs(GT_ModHandler.getModItem(AppliedEnergistics2.ID, "item.ItemMultiMaterial", 1L, 39))
                 .duration(5 * SECONDS).eut(16).addTo(assemblerRecipes);
-
+*/
         GT_Values.RA.stdBuilder()
                 .itemInputs(
                         ItemList.Hatch_Output_Bus_HV.get(1L),
@@ -3829,6 +3830,7 @@ public class AssemblerRecipes implements Runnable {
                 .itemOutputs(ItemList.Hatch_Input_ME.get(1)).duration(15 * SECONDS).eut(TierEU.RECIPE_UV)
                 .addTo(assemblerRecipes);
 
+        /*
         // Cell Workbench
         GT_Values.RA.stdBuilder()
                 .itemInputs(
@@ -4095,6 +4097,7 @@ public class AssemblerRecipes implements Runnable {
                     .duration(5 * SECONDS).eut(16).addTo(assemblerRecipes);
 
         }
+        */
     }
 
     private void makeTinkersConstructRecipes() {

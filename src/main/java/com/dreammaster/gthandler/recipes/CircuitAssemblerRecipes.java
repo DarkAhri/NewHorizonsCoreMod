@@ -304,6 +304,7 @@ public class CircuitAssemblerRecipes implements Runnable {
                 .itemOutputs(ItemList.Circuit_Crystalprocessor.get(1L)).fluidInputs(new FluidStack(solderIndalloy, 72))
                 .requiresCleanRoom().duration(2 * SECONDS + 10 * TICKS).eut(153600).addTo(circuitAssemblerRecipes);
 
+        /*
         if (AppliedEnergistics2.isModLoaded()) {
             // 1k ME Storage Component
 
@@ -443,6 +444,7 @@ public class CircuitAssemblerRecipes implements Runnable {
                     .eut(TierEU.RECIPE_HV).addTo(circuitAssemblerRecipes);
 
         }
+        */
     }
 
     public void solderingMaterials() {

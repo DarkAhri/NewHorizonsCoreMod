@@ -46,6 +46,18 @@ public class ScriptAE2WC implements IScriptLoader {
                 getModItem(AppliedEnergistics2.ID, "item.ItemMultiMaterial", 1, 38, missing),
                 getModItem(AppliedEnergistics2.ID, "item.ItemMultiMaterial", 1, 47, missing),
                 getModItem(AppliedEnergistics2.ID, "item.ItemMultiMaterial", 1, 38, missing));
+        //添加超级加速卡和矿典过滤卡
+        addShapelessRecipe(
+                SuperSpeedCard,
+                getModItem(AppliedEnergistics2.ID, "item.ItemMultiMaterial", 1, 28),
+                getModItem(AppliedEnergistics2.ID, "item.ItemMultiMaterial", 1, 24, missing),
+                CustomItemList.AcceleratorLV);
+        addShapelessRecipe(
+                getModItem(AppliedEnergistics2.ID, "item.ItemMultiMaterial", 1, 55, missing),
+                getModItem(AppliedEnergistics2.ID, "item.ItemMultiMaterial", 1, 28, missing),
+                getModItem(AppliedEnergistics2.ID, "item.ItemMultiMaterial", 1, 24, missing),
+                getModItem(AppliedEnergistics2.ID, "item.ItemMultiMaterial", 1, 24, missing),
+                ItemList.Automation_TypeFilter_LV.get(1L));
 
         ExtremeCraftingManager.getInstance().addExtremeShapedOreRecipe(
                 getModItem(AE2WCT.ID, "infinityBoosterCard", 1, 0, missing),

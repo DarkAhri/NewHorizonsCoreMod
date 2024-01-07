@@ -356,6 +356,7 @@ public class RecipeRemover {
         GT_ModHandler.removeFurnaceSmelting(getModItem("TConstruct", "CraftedSoil", 1, 6, missing));
         GT_ModHandler.removeFurnaceSmelting(getModItem("TwilightForest", "item.ironwoodRaw", 1, wildcard, missing));
 
+        /*
         removeRecipeByOutputDelayed(getModItem("appliedenergistics2", "tile.BlockFluix", 1, 0, missing));
         removeRecipeByOutputDelayed(getModItem("appliedenergistics2", "tile.BlockQuartz", 1, 0, missing));
         removeRecipeByOutputDelayed(getModItem("appliedenergistics2", "tile.BlockQuartzChiseled", 1, 0, missing));
@@ -481,6 +482,7 @@ public class RecipeRemover {
         removeRecipeByOutputDelayed(getModItem("ae2stuff", "Wireless", 1, 0, missing));
         removeRecipeByOutputDelayed(getModItem("ae2stuff", "WirelessKit", 1, 0, missing));
         removeRecipeByOutputDelayed(getModItem("ae2stuff", "Visualiser", 1, 0, missing));
+        */
         removeRecipeByOutputDelayed(getModItem("AdvancedSolarPanel", "BlockMolecularTransformer", 1, 0, missing));
         removeRecipeByOutputDelayed(getModItem("AdvancedSolarPanel", "asp_crafting_items", 1, 0, missing));
         removeRecipeByOutputDelayed(getModItem("AdvancedSolarPanel", "asp_crafting_items", 1, 1, missing));
@@ -2640,6 +2642,7 @@ public class RecipeRemover {
         removeRecipeByOutputDelayed(getModItem("thaumicbases", "voidFAS", 1, 0, missing));
         removeRecipeByOutputDelayed(getModItem("thaumicbases", "voidShears", 1, 0, missing));
         removeRecipeByOutputDelayed(getModItem("thaumicbases", "quicksilverBlock", 1, 0, missing));
+        /*
         removeRecipeByOutputDelayed(getModItem("thaumicenergistics", "wireless.essentia.terminal", 1, 0, missing));
         removeRecipeByOutputDelayed(getModItem("thaumicenergistics", "part.base", 1, 7, missing));
         removeRecipeByOutputDelayed(getModItem("thaumicenergistics", "part.base", 1, 8, missing));
@@ -2657,6 +2660,7 @@ public class RecipeRemover {
         removeRecipeByOutputDelayed(getModItem("thaumicenergistics", "storage.essentia", 1, 10, missing));
         removeRecipeByOutputDelayed(
                 getModItem("thaumicenergistics", "thaumicenergistics.block.essentia.cell.workbench", 1, 0, missing));
+        */
         removeRecipeByOutputDelayed(getModItem("ThaumicExploration", "blankSeal", 1, wildcard, missing));
         removeRecipeByOutputDelayed(getModItem("ThaumicTinkerer", "shareBook", 1, 0, missing));
         removeRecipeByOutputDelayed(getModItem("ThaumicTinkerer", "darkQuartzItem", 1, 0, missing));
