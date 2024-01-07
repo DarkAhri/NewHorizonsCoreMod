@@ -14,7 +14,7 @@ public class LoginHandler {
 
     private static final String[] LOGIN_TEXT = {
             GOLD.toString() + STRIKETHROUGH + "-----------------------------------------------------",
-            Green + "Welcome to Gregtech: New Horizons & Reika",
+            GREEN + "Welcome to Gregtech: New Horizons & Reika！",
             GOLD.toString() + STRIKETHROUGH + "-----------------------------------------------------" };
 
     @SuppressWarnings("unused")
