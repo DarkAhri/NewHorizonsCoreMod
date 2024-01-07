@@ -1,6 +1,5 @@
 package com.dreammaster.loginhandler;
 
-import static com.dreammaster.config.CoreModConfig.ModPackVersion;
 import static net.minecraft.util.EnumChatFormatting.*;
 
 import java.util.Arrays;
