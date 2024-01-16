@@ -92,7 +92,7 @@ public class ScriptLoader {
                         new ScriptProjectRed(),
                         new ScriptRailcraft(),
                         new ScriptRandomThings(),
-                        new ScriptRemoteIO(),
+                        // new ScriptRemoteIO(),
                         new ScriptRunicTablet(),
                         new ScriptSGCraft(),
                         new ScriptSleepingBags(),
