@@ -25,7 +25,7 @@ public class ScriptLoader {
                         new ScriptAE2WC(),
                         new ScriptAFSU(),
                         new ScriptAmunRa(),
-                        // new ScriptAppliedEnergistics2(),
+                        new ScriptAppliedEnergistics2(),
                         new ScriptArchitectureCraft(),
                         new ScriptAutomagy(),
                         new ScriptAvaritiaAddons(),
