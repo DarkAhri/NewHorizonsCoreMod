@@ -1882,6 +1882,38 @@ public class AssemblerRecipes implements Runnable {
                     .itemOutputs(GT_ModHandler.getModItem(GalacticraftMars.ID, "item.null", 1, 6)).duration(5 * SECONDS)
                     .eut(TierEU.RECIPE_HV).addTo(assemblerRecipes);
         }
+
+        // Super Tank V
+        GT_Values.RA.stdBuilder()
+                .itemInputs(
+                        GT_OreDictUnificator.get(OrePrefixes.circuit.get(Materials.Elite), 4),
+                        Materials.Titanium.getPlates(2),
+                        ItemList.Electric_Pump_EV.get(1),
+                        ItemList.Field_Generator_HV.get(1),
+                        ItemList.Casing_Tank_5.get(1))
+                .itemOutputs(ItemList.Super_Tank_IV.get(1L)).duration(5 * SECONDS).eut(TierEU.RECIPE_HV)
+                .addTo(assemblerRecipes);
+
+        // Super Chest V
+        GT_Values.RA.stdBuilder()
+                .itemInputs(
+                        GT_OreDictUnificator.get(OrePrefixes.circuit.get(Materials.Elite), 4),
+                        GT_OreDictUnificator.get(OrePrefixes.plateQuadruple, Materials.Titanium, 3),
+                        ItemList.Field_Generator_HV.get(1),
+                        ItemList.Automation_SuperBuffer_IV.get(1))
+                .itemOutputs(ItemList.Super_Chest_IV.get(1L)).duration(5 * SECONDS).eut(TierEU.RECIPE_HV)
+                .addTo(assemblerRecipes);
+
+        // Chest Buffer IV
+        GT_Values.RA.stdBuilder()
+                .itemInputs(
+                        ItemList.Conveyor_Module_IV.get(1),
+                        GT_OreDictUnificator.get(OrePrefixes.circuit.get(Materials.Elite), 1),
+                        ItemList.Hull_IV.get(1),
+                        GT_OreDictUnificator.get(OrePrefixes.chest, Materials.Wood, 1))
+                .itemOutputs(ItemList.Automation_ChestBuffer_IV.get(1L)).duration(5 * SECONDS).eut(TierEU.RECIPE_HV)
+                .addTo(assemblerRecipes);
+
         // Quantum Tank V
         GT_Values.RA.stdBuilder()
                 .itemInputs(
@@ -1920,6 +1952,26 @@ public class AssemblerRecipes implements Runnable {
                         GT_OreDictUnificator.get(OrePrefixes.chest, Materials.Wood, 1))
                 .itemOutputs(CustomItemList.Automation_ChestBuffer_UEV.get(1L)).duration(5 * SECONDS)
                 .eut(TierEU.RECIPE_HV).addTo(assemblerRecipes);
+
+        // UV Compressor
+        GT_Values.RA.stdBuilder().itemInputs(
+                ItemList.Hull_UV.get(1),
+                // UV circuit, but internal naming is SuperconductorUHV?
+                GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.SuperconductorUHV, 2),
+                ItemList.Electric_Piston_UV.get(2),
+                GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.ElectrumFlux, 4))
+                .itemOutputs(CustomItemList.CompressorUV.get(1)).duration(5 * SECONDS).eut(TierEU.RECIPE_UV)
+                .addTo(assemblerRecipes);
+
+        // UV Microwave Transmitter
+        GT_Values.RA.stdBuilder().itemInputs(
+                ItemList.Hull_UV.get(1),
+                // UV circuit, but internal naming is SuperconductorUHV?
+                GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.SuperconductorUHV, 2),
+                ItemList.Emitter_UV.get(4),
+                ItemList.Field_Generator_UV.get(1),
+                ItemList.Energy_Module.get(1)).itemOutputs(ItemList.MicroTransmitter_UV.get(1)).duration(5 * SECONDS)
+                .eut(TierEU.RECIPE_UV).addTo(assemblerRecipes);
 
         if (HardcoreEnderExpansion.isModLoaded()) {
             // Biome Compass
